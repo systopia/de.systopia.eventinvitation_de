@@ -55,11 +55,23 @@ Nachrichtenvorlage, die eine der folgenden Smarty-Variablen enthält:
 
 Wenn Sie einen Drupal-Endpunkt verwenden, der auf CiviRemote basiert, besuchen
 Sie die Einstellungsseite der Erweiterung, kreuzen Sie das Feld für die
-benutzerdefinierte URL an und geben
-Sie `https://yourpublicfrontend.org/civiremote/event/register/{token}` als
-benutzerdefinierte URL ein. Installieren Sie auf Ihrem öffentlichen
-Drupal-System [CiviRemote](https://github.com/systopia/civiremote), fügen Sie
-ein CiviRemote-Profil (`/admin/config/cmrf/profiles`) und einen Connector
+benutzerdefinierte URL an und geben Sie als benutzerdefinierte URL eine der
+folgenden ein, abhängig von Ihrer Konfiguration und ggf. eigenen
+Implementierungen:
+* `https://yourpublicfrontend.org/civiremote/event/register/{token}`
+  Mit dem *register*-Endpunkt wird die Benutzerreaktion auf die Einladung als
+  Registrierung verarbeitet, d.h. der Benutzer muss die Berechtigung zur
+  Registrierung besitzen, wofür u.a. die Registrierung für die Veranstaltung
+  noch geöffnet sein muss, und keine anderen Beschränkungen aktiv sein dürfen.
+* `https://yourpublicfrontend.org/civiremote/event/update/{token}`
+  Mit dem *update*-Endpunkt wird die Benutzerreaktion auf die Einladung als
+  Aktualisierung einer Registrierung verarbeitet (die technisch betrachtet
+  bereits mit dem Status *Eingeladen* existiert), d.h. der Benutzer muss die
+  Berechtigung zum Bearbeiten eigener Registrierungen besitzen.
+
+Installieren Sie auf Ihrem öffentlichen Drupal-System
+[CiviRemote](https://github.com/systopia/civiremote), fügen Sie ein CiviRemote-
+Profil (`/admin/config/cmrf/profiles`) und einen Connector
 (`/admin/config/cmrf/connectors`) hinzu, falls Sie dies noch nicht getan haben.
 
 ## Verwendung

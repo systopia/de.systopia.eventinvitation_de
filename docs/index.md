@@ -110,3 +110,7 @@ erweitern, würden wir Ihnen empfehlen, eine externe Zielseite / einen Endpunkt
 für das Formular zu erstellen. Für Drupal werden Sie höchstwahrscheinlich
 das [CiviRemote-Drupal-Modul](https://github.com/systopia/civiremote) verwenden
 wollen, das eine Menge vorgefertigter Funktionen enthält.
+
+## Documentation
+- EN: https://docs.civicrm.org/eventinvitation/en/latest
+- DE: https://docs.civicrm.org/eventinvitation/de/latest

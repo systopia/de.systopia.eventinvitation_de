@@ -91,7 +91,7 @@ erscheint ein Popup-Dialog, in dem Sie auswählen können:
   enthält. Nachdem Sie auf "Aktion bestätigen" geklickt haben, wird für alle
   ausgewählten Kontakte ein Teilnehmerobjekt (Anmeldung) mit dem Status "
   Eingeladen" erstellt. Wenn die Kontakte den Feedback-Link verwenden, wird
-  diese Anmeldung auf den Status "Eingeladen" oder "Abgesagt" aktualisiert, je
+  diese Anmeldung auf den Status "Registriert" oder "Abgesagt" aktualisiert, je
   nachdem, was der Benutzer ausgewählt hat. Wenn Sie einen automatisierten
   E-Mail-Workflow, das Einchecken von Teilnehmern über QR-Codes und/oder
   benutzerdefinierte Fernregistrierungsformulare nutzen möchten, sollten Sie
